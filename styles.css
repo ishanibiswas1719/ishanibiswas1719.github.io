@@ -592,6 +592,17 @@ a:focus-visible {
   text-transform: uppercase;
 }
 
+.role-company a {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.role-company a:hover {
+  color: var(--cream);
+  border-bottom-color: currentColor;
+}
+
 .role-main h3 {
   margin: 0;
   font-family: var(--serif);
