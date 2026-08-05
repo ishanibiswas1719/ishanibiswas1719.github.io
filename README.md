@@ -1,12 +1,40 @@
-# Ishani Biswas — Portfolio
+# Ishani Biswas — Sports Portfolio
 
-A responsive, static portfolio for Ishani Biswas, focused on sports operations, venue coordination and live-event delivery.
+A creative, routed portfolio for Ishani Biswas built with React, TypeScript, Vite and `HashRouter`. It presents her sports-operations experience, working process, résumé and expandable project archive.
 
-## Publish with GitHub Pages
+## Pages
 
-1. Create a new GitHub repository and upload all files in this folder.
-2. Open **Settings → Pages** in the repository.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the `main` branch and `/ (root)`, then save.
+- Home moodboard
+- About
+- Experience
+- Work archive
+- Individual work case studies
+- Match-day playbook
+- Résumé and education
+- Contact
 
-The website has no build step or external dependencies. Keep `IshaniBiswasCV.pdf` and `Ishani_pic.jpg` in the project root so the résumé and portrait links continue to work.
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+Run a production check with:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Adding future work
+
+1. Put the new PDF in `public/documents/`.
+2. Put its cover and preview images in `public/images/work/`.
+3. Add one new item to the `workItems` array in `src/portfolio.ts`.
+
+The Work archive and case-study route will use that entry automatically.
+
+## Deployment
+
+Pushing `main` runs `.github/workflows/deploy.yml`, builds the Vite app and publishes `dist/` through GitHub Pages. In repository settings, set **Pages → Source** to **GitHub Actions**.

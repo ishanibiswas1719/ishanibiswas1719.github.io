@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.vite/
+npm-debug.log*
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+
+# Copied academic-template assets; the Ishani site uses public/ instead.
+/data/
+/images/
+/mipnerf/
+/mipnerf360/
+/zipnerf/
+/scripts/
