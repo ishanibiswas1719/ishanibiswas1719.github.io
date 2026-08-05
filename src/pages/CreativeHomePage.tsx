@@ -5,20 +5,27 @@ export default function CreativeHomePage() {
   return (
     <div className="home-page">
       <section className="ribbon-hero" aria-labelledby="home-title">
-        <div className="ribbon-title">
-          <p className="eyebrow">Brand strategy · live sport · AI-enabled creativity</p>
-          <h1 id="home-title">Ishani’s<br /><em>playbook</em></h1>
-          <div className="hero-ticket">
-            <span>Admit one</span>
-            <strong>Ideas that<br />show up IRL</strong>
-            <small>Class of ’26</small>
+        <div className="hero-masthead">
+          <div className="ribbon-title">
+            <p className="eyebrow">Brand strategy · live sport · AI-enabled creativity</p>
+            <h1 id="home-title">Brand ideas,<br /><em>brought to life.</em></h1>
+          </div>
+          <div className="hero-visual" aria-hidden="true">
+            <div className="hero-ticket">
+              <span>Admit one</span>
+              <strong>Ideas that<br />show up IRL</strong>
+              <small>Class of ’26</small>
+            </div>
+            <figure className="hero-portrait-card">
+              <img src="/images/ishani-portrait.jpg" alt="" />
+              <figcaption>curious by nature ✦</figcaption>
+            </figure>
           </div>
         </div>
 
         <nav className="ribbon-stack" aria-label="Explore the portfolio">
           <Link className="ribbon ribbon-about" to="/about">
             <span>01</span><strong>The person behind the playbook</strong>
-            <img src="/images/ishani-portrait.jpg" alt="" />
             <i className="sparkle">✦</i>
           </Link>
           <Link className="ribbon ribbon-experience" to="/experience">
