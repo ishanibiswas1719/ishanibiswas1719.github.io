@@ -3,11 +3,11 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { navigation } from "./portfolio";
 
 const pageTitles: Record<string, string> = {
-  "/": "Ishani Biswas — Sports Portfolio",
+  "/": "Ishani Biswas — Brand, Experience & Sports Portfolio",
   "/about": "About — Ishani Biswas",
   "/experience": "Experience — Ishani Biswas",
   "/work": "Selected Work — Ishani Biswas",
-  "/playbook": "Playbook — Ishani Biswas",
+  "/playbook": "Approach + AI — Ishani Biswas",
   "/resume": "Résumé — Ishani Biswas",
   "/contact": "Contact — Ishani Biswas",
 };
@@ -59,7 +59,8 @@ export default function Layout({ children }: { children: ReactNode }) {
         <div className="footer-stamp">Open to work</div>
         <div>
           <p className="footer-name">Ishani Biswas</p>
-          <p>Sports operations · Venue branding · Live experiences</p>
+          <p>Brand strategy · Experiential marketing · Sports · AI-enabled creativity</p>
+          <p className="footer-built">Built through curiosity + AI-assisted vibe coding.</p>
         </div>
         <div className="footer-links">
           <a href="mailto:ishani.biswas017@gmail.com">Email</a>

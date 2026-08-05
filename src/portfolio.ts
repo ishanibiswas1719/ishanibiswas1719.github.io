@@ -21,7 +21,7 @@ export const navigation = [
   { to: "/about", label: "About" },
   { to: "/experience", label: "Experience" },
   { to: "/work", label: "Work" },
-  { to: "/playbook", label: "Playbook" },
+  { to: "/playbook", label: "Approach + AI" },
   { to: "/resume", label: "Résumé" },
 ];
 
@@ -144,12 +144,16 @@ export const experiences = [
 ];
 
 export const skills = [
-  "Operations coordination",
-  "Project management",
-  "Strategic thinking",
-  "Microsoft Excel",
-  "Microsoft Power BI",
-  "Content creation",
-  "Communication",
-  "Adaptability",
+  "Brand strategy",
+  "Experiential marketing",
+  "Sponsor asset management",
+  "Brand compliance",
+  "Venue operations",
+  "Audience-first storytelling",
+  "Research & synthesis",
+  "AI-assisted ideation",
+  "Prompting & rapid prototyping",
+  "Presentation development",
+  "Stakeholder coordination",
+  "Adaptability under pressure",
 ];

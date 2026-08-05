@@ -1,6 +1,6 @@
-# Ishani Biswas — Sports Portfolio
+# Ishani Biswas — Brand, Experience & Sports Portfolio
 
-A creative, routed portfolio for Ishani Biswas built with React, TypeScript, Vite and `HashRouter`. It presents her sports-operations experience, working process, résumé and expandable project archive.
+A creative, routed portfolio for Ishani Biswas built with React, TypeScript, Vite and `HashRouter`. It presents her sports-branding experience, strategic and AI-enabled working process, résumé and expandable project archive.
 
 ## Pages
 
@@ -9,7 +9,7 @@ A creative, routed portfolio for Ishani Biswas built with React, TypeScript, Vit
 - Experience
 - Work archive
 - Individual work case studies
-- Match-day playbook
+- Approach + AI playbook
 - Résumé and education
 - Contact
 
@@ -37,4 +37,6 @@ The Work archive and case-study route will use that entry automatically.
 
 ## Deployment
 
-Pushing `main` runs `.github/workflows/deploy.yml`, builds the Vite app and publishes `dist/` through GitHub Pages. In repository settings, set **Pages → Source** to **GitHub Actions**.
+Pushing `main` runs `.github/workflows/deploy.yml`, builds the Vite app and publishes `dist/` through GitHub Pages.
+
+Required one-time repository setting: open **Settings → Pages → Build and deployment → Source** and select **GitHub Actions**. If **Deploy from a branch** is selected, GitHub serves the raw Vite source and the browser shows a blank page.
