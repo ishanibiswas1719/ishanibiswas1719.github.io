@@ -37,7 +37,7 @@ export default function CreativeExperiencePage() {
       </section>
 
       <section className="experience-quote">
-        <p>“Pressure changes the plan.<br /><em>Preparation protects the outcome.</em>”</p>
+        <p>“Live events change the plan.<br /><em>Preparation protects the outcome.</em>”</p>
         <Link to="/playbook">See how I work →</Link>
       </section>
     </div>

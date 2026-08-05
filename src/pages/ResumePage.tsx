@@ -6,7 +6,7 @@ export default function ResumePage() {
       <PageIntro
         eyebrow="05 / Résumé & education"
         title={<>The one-page<br /><em>team sheet.</em></>}
-        note="Experience, education and the practical skills I bring to sports, brand and live-event teams."
+        note="Experience, education and the practical skills I bring to events, brands, agencies and creative teams."
       />
 
       <section className="education-ticket">

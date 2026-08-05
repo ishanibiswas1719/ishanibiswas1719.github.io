@@ -13,3 +13,10 @@ vite.config.d.ts
 /mipnerf360/
 /zipnerf/
 /scripts/
+
+# Raw phone exports are retained locally; curated, renamed copies live in public/.
+/Items/
+/Self Pics/
+
+# Raw phone exports are retained locally; curated, renamed copies live in public/.
+/Items/

@@ -1,14 +1,21 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { PageIntro } from "../Layout";
+import MediaLightbox from "../MediaLightbox";
+import { fieldStories } from "../media";
 import { workItems } from "../portfolio";
 
+const fieldMedia = fieldStories.flatMap((story) => story.media);
+
 export default function WorkPage() {
+  const [activeMedia, setActiveMedia] = useState<number | null>(null);
+
   return (
     <div className="work-page">
       <PageIntro
         eyebrow="03 / Work archive"
         title={<>Ideas, research &<br /><em>things made real.</em></>}
-        note="A growing shelf of event concepts, industry research and—soon—photographs from work delivered on the ground."
+        note="A growing shelf of event concepts, industry research and first-hand documentation from work and learning delivered on the ground."
       />
 
       <section className="work-shelf">
@@ -29,19 +36,62 @@ export default function WorkPage() {
         ))}
       </section>
 
-      <section className="field-gallery">
-        <div className="field-gallery-heading">
-          <p className="eyebrow">Field gallery</p>
-          <h2>Notes from<br /><em>the touchline</em></h2>
-          <p>This space is designed to grow with match-day photographs, installation details and stories from future events.</p>
-        </div>
-        <div className="gallery-stack" aria-label="Future field gallery">
-          <div className="gallery-card gallery-card-one"><span>01</span><strong>Venue set-up</strong><p>before the gates open</p></div>
-          <div className="gallery-card gallery-card-two"><span>02</span><strong>Brand assets</strong><p>from placement to broadcast</p></div>
-          <div className="gallery-card gallery-card-three"><span>03</span><strong>Live moments</strong><p>ceremonies, teams & delivery</p></div>
-          <div className="gallery-coming-soon">photos<br />coming<br /><em>soon ✦</em></div>
+      <section className="field-archive" aria-labelledby="field-archive-title">
+        <header className="field-archive-heading">
+          <div>
+            <p className="eyebrow">Field notes · selected documentation</p>
+            <h2 id="field-archive-title">Where the work<br /><em>met the real world.</em></h2>
+          </div>
+          <p>
+            Venue identity, sponsor visibility, audience experience and operational detail—documented across live delivery and an international industrial visit.
+          </p>
+        </header>
+
+        <div className="field-stories">
+          {fieldStories.map((story) => (
+            <article className="field-story" key={story.title}>
+              <div className="field-story-copy">
+                <p className="field-story-number">{story.number}</p>
+                <p className="eyebrow">{story.eyebrow}</p>
+                <h3>{story.title}</h3>
+                <div className="field-story-meta"><span>{story.location}</span><span>{story.year}</span></div>
+                <p>{story.summary}</p>
+                <aside><b>My lens</b><span>{story.contribution}</span></aside>
+              </div>
+              <div className={`field-media-grid media-count-${story.media.length}`}>
+                {story.media.map((media) => {
+                  const mediaIndex = fieldMedia.findIndex((item) => item.src === media.src);
+                  return (
+                    <button
+                      className={media.type === "video" ? "field-media-card is-video" : "field-media-card"}
+                      type="button"
+                      onClick={() => setActiveMedia(mediaIndex)}
+                      aria-label={`Open ${media.type}: ${media.caption}`}
+                      key={media.src}
+                    >
+                      <img
+                        src={media.type === "video" ? media.poster : media.src}
+                        alt={media.alt}
+                        loading="lazy"
+                        style={{ objectPosition: media.focalPoint }}
+                      />
+                      {media.type === "video" && <span className="video-badge">Play video ▶</span>}
+                      <small>{media.caption}</small>
+                    </button>
+                  );
+                })}
+              </div>
+            </article>
+          ))}
         </div>
       </section>
+
+      <MediaLightbox
+        items={fieldMedia}
+        activeIndex={activeMedia}
+        onChange={setActiveMedia}
+        onClose={() => setActiveMedia(null)}
+      />
     </div>
   );
 }

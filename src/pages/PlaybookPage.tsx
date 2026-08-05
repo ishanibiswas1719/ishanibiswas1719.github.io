@@ -53,16 +53,16 @@ export default function PlaybookPage() {
 
       <section className="governance-board">
         <div className="governance-title">
-          <p className="eyebrow">The question beyond the tool</p>
-          <h2>What should responsible AI<br /><em>look like in sport?</em></h2>
+          <p className="eyebrow">Events · marketing · advertising · rooted in sport</p>
+          <h2>What should responsible AI<br /><em>look like in creative work?</em></h2>
         </div>
         <div className="governance-grid">
-          <article><span>01</span><p>Who is accountable when an AI-supported officiating decision affects the competition?</p></article>
-          <article><span>02</span><p>How should automated sponsorship or visibility decisions be explained and challenged?</p></article>
-          <article><span>03</span><p>What should fans know when AI shapes broadcasts, content or personalised experiences?</p></article>
-          <article><span>04</span><p>How can governance work under the speed and pressure of a live event—not only on paper?</p></article>
+          <article><span>01</span><p>Who is accountable when an AI-supported operational decision affects a live event?</p></article>
+          <article><span>02</span><p>How should automated targeting, sponsorship or visibility decisions be explained and challenged?</p></article>
+          <article><span>03</span><p>What should audiences know when AI shapes advertising, campaign content or personalised experiences?</p></article>
+          <article><span>04</span><p>How do creative teams use AI at speed while protecting authorship, context and human judgment?</p></article>
         </div>
-        <p className="governance-footnote">An emerging area of interest, grounded in practical experience with branding compliance and match-day operations.</p>
+        <p className="governance-footnote">An emerging area of interest grounded in sports branding, sponsor compliance and live-event operations—and expanding into wider events, marketing and advertising practice.</p>
       </section>
 
       <section className="skills-board">

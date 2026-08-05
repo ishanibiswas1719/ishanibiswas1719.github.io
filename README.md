@@ -1,6 +1,6 @@
-# Ishani Biswas — Brand, Experience & Sports Portfolio
+# Ishani Biswas — Events, Brand & Creative Portfolio
 
-A creative, routed portfolio for Ishani Biswas built with React, TypeScript, Vite and `HashRouter`. It presents her sports-branding experience, strategic and AI-enabled working process, résumé and expandable project archive.
+A creative, routed portfolio for Ishani Biswas built with React, TypeScript, Vite and `HashRouter`. It presents her events and branding experience, strategic and AI-enabled working process, résumé and expandable project archive.
 
 ## Pages
 

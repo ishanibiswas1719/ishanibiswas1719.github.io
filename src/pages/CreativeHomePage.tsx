@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { mainPortrait } from "../media";
 import { workItems } from "../portfolio";
 
 export default function CreativeHomePage() {
@@ -7,7 +8,7 @@ export default function CreativeHomePage() {
       <section className="ribbon-hero" aria-labelledby="home-title">
         <div className="hero-masthead">
           <div className="ribbon-title">
-            <p className="eyebrow">Brand strategy · live sport · AI-enabled creativity</p>
+            <p className="eyebrow">Events · brand strategy · AI-enabled creativity</p>
             <h1 id="home-title">Brand ideas,<br /><em>brought to life.</em></h1>
           </div>
           <div className="hero-visual" aria-hidden="true">
@@ -17,7 +18,7 @@ export default function CreativeHomePage() {
               <small>Class of ’26</small>
             </div>
             <figure className="hero-portrait-card">
-              <img src="/images/ishani-portrait.jpg" alt="" />
+              <img src={mainPortrait} alt="" />
               <figcaption>curious by nature ✦</figcaption>
             </figure>
           </div>
@@ -25,11 +26,11 @@ export default function CreativeHomePage() {
 
         <nav className="ribbon-stack" aria-label="Explore the portfolio">
           <Link className="ribbon ribbon-about" to="/about">
-            <span>01</span><strong>The person behind the playbook</strong>
+            <span>01</span><strong>A little about me</strong>
             <i className="sparkle">✦</i>
           </Link>
           <Link className="ribbon ribbon-experience" to="/experience">
-            <span>02</span><strong>Brands, venues & live pressure</strong><i>↗</i>
+            <span>02</span><strong>Ideas, events & live execution</strong><i>↗</i>
           </Link>
           <Link className="ribbon ribbon-work" to="/work">
             <span>03</span><strong>Campaign thinking & research</strong>
@@ -42,7 +43,7 @@ export default function CreativeHomePage() {
             <span>05</span><strong>Résumé & education</strong><i>↗</i>
           </Link>
           <Link className="ribbon ribbon-contact" to="/contact">
-            <span>06</span><strong>Next fixture?</strong><i className="butterfly">༺</i>
+            <span>06</span><strong>Let’s work together</strong><i className="butterfly">༺</i>
           </Link>
         </nav>
         <p className="hero-page-no">01 / 07</p>
@@ -53,20 +54,20 @@ export default function CreativeHomePage() {
           <p className="eyebrow">Hello, I’m Ishani</p>
           <h2>I connect brand ideas<br /><em>to moments people can feel.</em></h2>
           <p>
-            I’m a sports management graduate working at the intersection of branding,
-            experiential strategy and live execution—with hands-on experience across major cricket tournaments
-            and a growing AI-enabled creative practice.
+            I’m an events and brand professional with formal training in sports management,
+            working across experiential strategy, creative thinking and live execution—with hands-on experience
+            in complex event environments and a growing AI-enabled practice.
           </p>
           <Link className="text-arrow" to="/about">Get to know me <span>→</span></Link>
         </div>
         <div className="intro-portrait collage-photo">
           <div className="tape" />
-          <img src="/images/ishani-portrait.jpg" alt="Ishani Biswas smiling" />
+          <img src={mainPortrait} alt="Ishani Biswas smiling" />
           <p>calm under pressure,<br />curious by nature ✦</p>
         </div>
         <div className="intro-stats">
-          <div><strong>4</strong><span>tournament environments</span></div>
-          <div><strong>2</strong><span>deep-dive portfolio projects</span></div>
+          <div><strong>10</strong><span>event & tournament environments</span></div>
+          <div><strong>5</strong><span>deep-dive portfolio projects</span></div>
           <div><strong>AI</strong><span>used to explore, prototype & learn</span></div>
         </div>
       </section>
@@ -109,10 +110,10 @@ export default function CreativeHomePage() {
         <div className="ai-orbit" aria-hidden="true"><span>AI</span><i>✦</i></div>
         <div>
           <p className="eyebrow">A new question in my notebook</p>
-          <h2>Sport is adopting AI quickly.<br /><em>Its governance needs to keep pace.</em></h2>
+          <h2>Events and marketing are adopting AI quickly.<br /><em>Responsible practice needs to keep pace.</em></h2>
           <p>
-            My experience with compliance under match-day pressure makes me curious about accountability
-            when AI influences officiating, sponsorship decisions, broadcasts or fan experiences.
+            My sports-led experience with compliance under live-event pressure makes me curious about accountability
+            when AI influences operations, advertising, sponsorship decisions, creative work or audience experiences.
           </p>
           <Link className="text-arrow" to="/playbook">See how I use—and question—AI <span>→</span></Link>
         </div>

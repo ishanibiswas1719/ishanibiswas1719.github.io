@@ -1,3 +1,5 @@
+import { mainPortrait } from "../media";
+
 export default function ContactPage() {
   return (
     <div className="contact-page">
@@ -5,13 +7,13 @@ export default function ContactPage() {
         <div className="contact-copy">
           <p className="eyebrow">06 / Next steps</p>
           <h1>Let’s make the<br />next idea <em>real.</em></h1>
-          <p>I’m exploring branding, advertising strategy, experiential marketing and AI-enabled project roles across sports, agencies and ambitious brands.</p>
+          <p>I’m exploring branding, advertising strategy, experiential marketing and AI-enabled project roles across events, agencies, entertainment, sports and ambitious brands.</p>
         </div>
 
         <div className="contact-pass">
           <div className="pass-top"><span>ALL ACCESS</span><small>CAREER / 2026</small></div>
           <div className="pass-body">
-            <img src="/images/ishani-portrait.jpg" alt="Ishani Biswas" />
+            <img src={mainPortrait} alt="Ishani Biswas" />
             <div><small>Name</small><strong>Ishani Biswas</strong><small>Focus</small><strong>Brand + experience strategy</strong></div>
           </div>
           <div className="barcode" aria-hidden="true" />
