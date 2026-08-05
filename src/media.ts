@@ -23,10 +23,10 @@ export const mainPortrait = "/images/portrait/ishani-main-portrait.jpg";
 export const aboutSnapshots: PortfolioMedia[] = [
   {
     type: "image",
-    src: "/images/portrait/ishani-playful-portrait.jpg",
-    alt: "Ishani Biswas smiling and making a peace sign in natural light",
+    src: "/images/portrait/ishani-event-portrait.jpg",
+    alt: "Ishani Biswas smiling in glasses with an event credential",
     caption: "Curious by nature, happiest when there is something new to learn.",
-    focalPoint: "50% 44%",
+    focalPoint: "50% 45%",
   },
   {
     type: "image",
@@ -37,10 +37,10 @@ export const aboutSnapshots: PortfolioMedia[] = [
   },
   {
     type: "image",
-    src: "/images/portrait/ishani-mirror-portrait.jpg",
-    alt: "A candid mirror portrait of Ishani",
-    caption: "A candid frame — curious, observant and always collecting ideas.",
-    focalPoint: "38% 44%",
+    src: "/images/portrait/ishani-wpl-2025-final.jpg",
+    alt: "Ishani on the field inside the WPL 2025 Final presentation environment",
+    caption: "WPL 2025 Final — a field-level view after the presentation moment.",
+    focalPoint: "50% 48%",
   },
   {
     type: "image",
@@ -105,6 +105,40 @@ export const fieldStories: FieldStory[] = [
   },
   {
     number: "02",
+    eyebrow: "Final delivery · presentation environment",
+    title: "IPL 2025 Final",
+    location: "Ahmedabad · Narendra Modi Stadium",
+    year: "2025",
+    summary:
+      "A championship-night environment where presentation staging, sponsor framing, broadcast sightlines and the final celebration had to work as one live visual system.",
+    contribution:
+      "First-hand field documentation from the Gold Coast Sport Signage operations team, focused on final-day readiness, presentation detail and the environment after delivery.",
+    media: [
+      {
+        type: "image",
+        src: "/images/field/ipl-2025-final/champions-presentation.jpg",
+        alt: "Royal Challengers Bengaluru celebrating as IPL 2025 champions amid confetti",
+        caption: "The championship presentation framed by team identity, sponsors, scenic elements and live confetti.",
+        focalPoint: "50% 58%",
+      },
+      {
+        type: "image",
+        src: "/images/field/ipl-2025-final/operations-team.jpg",
+        alt: "Ishani with Gold Coast Sport Signage colleagues on the IPL Final field in Ahmedabad",
+        caption: "The field operations team after final delivery at Narendra Modi Stadium.",
+        focalPoint: "50% 57%",
+      },
+      {
+        type: "image",
+        src: "/images/field/ipl-2025-final/trophy-presentation.jpg",
+        alt: "IPL 2025 trophy presentation stage with a broadcast camera in the foreground",
+        caption: "Trophy handover, presentation staging and broadcast positioning seen from field level.",
+        focalPoint: "50% 61%",
+      },
+    ],
+  },
+  {
+    number: "03",
     eyebrow: "Playoff operations · venue branding",
     title: "IPL 2024 Playoffs",
     location: "Chennai · M. A. Chidambaram Stadium",
@@ -135,7 +169,7 @@ export const fieldStories: FieldStory[] = [
     ],
   },
   {
-    number: "03",
+    number: "04",
     eyebrow: "Industrial visit · global venue learning",
     title: "Inside Paris venues",
     location: "Paris · Roland-Garros & Paris Saint-Germain",
@@ -191,7 +225,7 @@ export const fieldStories: FieldStory[] = [
     ],
   },
   {
-    number: "04",
+    number: "05",
     eyebrow: "Final operations · sponsor visibility",
     title: "WPL 2026 Final",
     location: "Navi Mumbai · final venue",

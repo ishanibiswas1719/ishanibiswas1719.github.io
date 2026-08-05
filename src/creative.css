@@ -277,7 +277,7 @@ a:focus-visible, button:focus-visible {
 .hero-ticket strong { display: block; margin: 10px 0; font-family: var(--serif); font-size: 18px; line-height: 1; }
 
 .hero-portrait-card { position: absolute; right: 0; bottom: 0; width: 185px; margin: 0; padding: 9px 9px 32px; border: 1px solid var(--line); background: var(--cream); box-shadow: 8px 10px 0 rgba(244,196,193,.75); transform: rotate(3deg); }
-.hero-portrait-card img { width: 100%; aspect-ratio: 4 / 4.6; object-fit: cover; object-position: center 45%; }
+.hero-portrait-card img { width: 100%; aspect-ratio: 4 / 4.6; object-fit: cover; object-position: center 35%; }
 .hero-portrait-card figcaption { position: absolute; right: 12px; bottom: 7px; font-family: var(--hand); font-size: 9px; }
 
 .ribbon-stack {
@@ -346,7 +346,7 @@ a:focus-visible, button:focus-visible {
 .collage-photo { position: relative; }
 .collage-photo img { width: 100%; object-fit: cover; }
 .intro-portrait { padding: 12px 12px 55px; border: 1px solid var(--line); background: var(--cream); box-shadow: 10px 12px 0 var(--pink); transform: rotate(2deg); }
-.intro-portrait img { aspect-ratio: 3/4; object-position: center 46%; }
+.intro-portrait img { aspect-ratio: 3/4; object-position: center 50%; }
 .intro-portrait p { position: absolute; right: 25px; bottom: 4px; margin: 0; font-family: var(--hand); font-size: 13px; line-height: 1.15; transform: rotate(-3deg); }
 .tape { position: absolute; z-index: 3; top: -17px; left: 34%; width: 110px; height: 35px; opacity: .72; background: var(--butter); transform: rotate(-5deg); }
 
@@ -414,7 +414,7 @@ a:focus-visible, button:focus-visible {
 .about-paragraphs { max-width: 660px; font-size: 16px; }
 .about-paragraphs p:first-child { font-size: 19px; font-weight: 650; }
 .about-photo { padding: 12px; border: 1px solid var(--line); background: var(--sky); transform: rotate(1.5deg); }
-.about-photo img { aspect-ratio: 3/4; object-fit: cover; object-position: center 46%; }
+.about-photo img { aspect-ratio: 3/4; object-fit: cover; object-position: center 50%; }
 .about-note { position: absolute; right: -45px; bottom: 45px; padding: 24px 28px; border: 2px solid var(--wine); background: var(--sky); font-family: var(--serif); font-size: 23px; line-height: 1.05; transform: rotate(-5deg); }
 .photo-star { position: absolute; z-index: 3; top: -45px; left: -38px; color: var(--pink-hot); font-size: 90px; }
 .about-snapshots { min-height: 760px; display: grid; grid-template-columns: .62fr 1.38fr; gap: 80px; align-items: center; padding: 100px max(32px, calc((100vw - 1220px) / 2)); overflow: hidden; background: var(--butter); }
@@ -508,6 +508,7 @@ a:focus-visible, button:focus-visible {
 .field-story:nth-child(2) { background: var(--sky); }
 .field-story:nth-child(3) { color: var(--paper); background: var(--moss); }
 .field-story:nth-child(4) { background: var(--pink); }
+.field-story:nth-child(5) { background: var(--butter); }
 .field-story-copy { align-self: start; position: sticky; top: 120px; }
 .field-story-number { margin: 0 0 70px; color: var(--pink-hot); font-family: var(--serif); font-size: 54px; line-height: 1; }
 .field-story-copy h3 { margin: 18px 0 20px; font-family: var(--serif); font-size: clamp(43px, 4.6vw, 66px); font-weight: 400; letter-spacing: -.055em; line-height: .87; }
@@ -671,7 +672,7 @@ a:focus-visible, button:focus-visible {
 .pass-top span { font-weight: 900; }
 .pass-top small { font-size: 8px; }
 .pass-body { display: grid; grid-template-columns: 92px 1fr; gap: 14px; padding: 15px 0; }
-.pass-body img { width: 92px; height: 115px; object-fit: cover; object-position: center 45%; }
+.pass-body img { width: 92px; height: 115px; object-fit: cover; object-position: center 35%; }
 .pass-body small, .pass-body strong { display: block; }
 .pass-body small { margin-top: 5px; font-size: 7px; font-weight: 800; text-transform: uppercase; }
 .pass-body strong { font-family: var(--serif); font-size: 17px; }

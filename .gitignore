@@ -17,6 +17,8 @@ vite.config.d.ts
 # Raw phone exports are retained locally; curated, renamed copies live in public/.
 /Items/
 /Self Pics/
+/2025 ipl/
+/2025 ipl/
 
 # Raw phone exports are retained locally; curated, renamed copies live in public/.
 /Items/
