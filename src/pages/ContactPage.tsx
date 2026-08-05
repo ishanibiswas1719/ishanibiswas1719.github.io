@@ -18,7 +18,7 @@ export default function ContactPage() {
         </div>
 
         <div className="contact-options">
-          <a href="mailto:ishani.biswas017@gmail.com"><span>Email</span><strong>ishani.biswas017@gmail.com</strong><i>↗</i></a>
+          <a href="mailto:ishanibiswas017@gmail.com"><span>Email</span><strong>ishanibiswas017@gmail.com</strong><i>↗</i></a>
           <a href="tel:+917605060507"><span>Call</span><strong>+91 76050 60507</strong><i>↗</i></a>
           <a href="https://www.linkedin.com/in/ishani-biswas-6a5760292" target="_blank" rel="noreferrer"><span>Connect</span><strong>LinkedIn</strong><i>↗</i></a>
         </div>

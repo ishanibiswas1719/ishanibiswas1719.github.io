@@ -63,7 +63,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           <p className="footer-built">Built through curiosity + AI-assisted vibe coding.</p>
         </div>
         <div className="footer-links">
-          <a href="mailto:ishani.biswas017@gmail.com">Email</a>
+          <a href="mailto:ishanibiswas017@gmail.com">Email</a>
           <a href="https://www.linkedin.com/in/ishani-biswas-6a5760292" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="/documents/Ishani-Biswas-CV.pdf" target="_blank" rel="noreferrer">Résumé</a>
         </div>
