@@ -13,7 +13,7 @@ export default function CreativeExperiencePage() {
 
       <section className="experience-timeline" aria-label="Work experience">
         {experiences.map((experience, index) => (
-          <article className="experience-story" key={experience.company}>
+          <article className="experience-story" key={experience.company} data-reveal>
             <div className="experience-number">0{index + 1}</div>
             <div className="experience-meta">
               <p>{experience.period}</p>
@@ -36,7 +36,7 @@ export default function CreativeExperiencePage() {
         ))}
       </section>
 
-      <section className="experience-quote">
+      <section className="experience-quote" data-reveal>
         <p>“Live events change the plan.<br /><em>Preparation protects the outcome.</em>”</p>
         <Link to="/playbook">See how I work →</Link>
       </section>

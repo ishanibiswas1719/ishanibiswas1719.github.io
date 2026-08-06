@@ -18,26 +18,26 @@ export default function WorkDetailPage() {
   return (
     <article className={`case-study case-${item.theme}`}>
       <header className="case-hero">
-        <div className="case-title-block">
+        <div className="case-title-block" data-reveal>
           <Link className="back-link" to="/work">← Work archive</Link>
           <p>{item.category} · {item.year}</p>
           <h1>{item.title}</h1>
           <div className="case-tags">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
         </div>
-        <div className="case-cover-wrap">
+        <div className="case-cover-wrap" data-reveal>
           <img src={item.cover} alt={`Cover of ${item.title}`} />
           <span>{item.pages}</span>
         </div>
       </header>
 
-      <section className="case-brief">
+      <section className="case-brief" data-reveal>
         <div><p className="eyebrow">The brief</p><h2>{item.brief}</h2></div>
         <div className="case-role"><small>My contribution</small><p>{item.role}</p></div>
       </section>
 
       <section className="case-highlights">
         {item.highlights.map((highlight, index) => (
-          <article key={highlight.title}>
+          <article key={highlight.title} data-reveal>
             <span>0{index + 1}</span>
             <h3>{highlight.title}</h3>
             <p>{highlight.text}</p>
@@ -46,20 +46,20 @@ export default function WorkDetailPage() {
       </section>
 
       <section className="case-previews">
-        <div className="case-previews-heading">
+        <div className="case-previews-heading" data-reveal>
           <p className="eyebrow">Inside the document</p>
           <h2>A few pages<br /><em>from the work.</em></h2>
         </div>
         <div className="preview-collage">
           {item.previews.map((preview, index) => (
-            <figure className={`preview preview-${index + 1}`} key={preview.src}>
+            <figure className={`preview preview-${index + 1}`} key={preview.src} data-reveal>
               <img src={preview.src} alt={preview.alt} loading="lazy" />
             </figure>
           ))}
         </div>
       </section>
 
-      <section className="case-document">
+      <section className="case-document" data-reveal>
         <div>
           <p className="eyebrow">Full work sample</p>
           <h2>Curious about<br />the details?</h2>

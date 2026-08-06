@@ -7,11 +7,11 @@ export default function CreativeHomePage() {
     <div className="home-page">
       <section className="ribbon-hero" aria-labelledby="home-title">
         <div className="hero-masthead">
-          <div className="ribbon-title">
+          <div className="ribbon-title" data-reveal>
             <p className="eyebrow">Events · brand strategy · AI-enabled creativity</p>
             <h1 id="home-title">Brand ideas,<br /><em>brought to life.</em></h1>
           </div>
-          <div className="hero-visual" aria-hidden="true">
+          <div className="hero-visual" aria-hidden="true" data-reveal>
             <div className="hero-ticket">
               <span>Admit one</span>
               <strong>Ideas that<br />show up IRL</strong>
@@ -24,7 +24,7 @@ export default function CreativeHomePage() {
           </div>
         </div>
 
-        <nav className="ribbon-stack" aria-label="Explore the portfolio">
+        <nav className="ribbon-stack" aria-label="Explore the portfolio" data-reveal>
           <Link className="ribbon ribbon-about" to="/about">
             <span>01</span><strong>A little about me</strong>
             <i className="sparkle">✦</i>
@@ -50,7 +50,7 @@ export default function CreativeHomePage() {
       </section>
 
       <section className="home-intro paper-section">
-        <div className="intro-copy">
+        <div className="intro-copy" data-reveal>
           <p className="eyebrow">Hello, I’m Ishani</p>
           <h2>I connect brand ideas<br /><em>to moments people can feel.</em></h2>
           <p>
@@ -60,12 +60,12 @@ export default function CreativeHomePage() {
           </p>
           <Link className="text-arrow" to="/about">Get to know me <span>→</span></Link>
         </div>
-        <div className="intro-portrait collage-photo">
+        <div className="intro-portrait collage-photo" data-reveal>
           <div className="tape" />
           <img src={mainPortrait} alt="Ishani Biswas smiling" />
           <p>calm under pressure,<br />curious by nature ✦</p>
         </div>
-        <div className="intro-stats">
+        <div className="intro-stats" data-reveal>
           <div><strong>10</strong><span>event & tournament environments</span></div>
           <div><strong>5</strong><span>deep-dive portfolio projects</span></div>
           <div><strong>AI</strong><span>used to explore, prototype & learn</span></div>
@@ -73,12 +73,12 @@ export default function CreativeHomePage() {
       </section>
 
       <section className="role-compass" aria-labelledby="role-compass-title">
-        <div className="role-compass-heading">
+        <div className="role-compass-heading" data-reveal>
           <p className="eyebrow">Where I want to make an impact</p>
           <h2 id="role-compass-title">Part operator.<br /><em>Part brand thinker.</em></h2>
           <p>I bring a ground-level understanding of how a brand promise survives real venues, real audiences and real deadlines.</p>
         </div>
-        <div className="role-cards">
+        <div className="role-cards" data-reveal>
           <article><span>01</span><h3>Branding & sponsor strategy</h3><p>Turning identity, rights and visibility requirements into consistent audience-facing moments.</p></article>
           <article><span>02</span><h3>Experiential advertising</h3><p>Building participatory ideas that connect product, place, culture and shareable behaviour.</p></article>
           <article><span>03</span><h3>Creative strategy & research</h3><p>Finding the useful insight, structuring the story and making the recommendation easy to act on.</p></article>
@@ -87,13 +87,13 @@ export default function CreativeHomePage() {
       </section>
 
       <section className="featured-work-section">
-        <div className="section-heading-row">
+        <div className="section-heading-row" data-reveal>
           <div><p className="eyebrow">A peek inside the folder</p><h2>Selected work</h2></div>
           <Link className="text-arrow" to="/work">See the archive <span>→</span></Link>
         </div>
         <div className="home-work-grid">
           {workItems.map((item, index) => (
-            <Link className={`home-work-card theme-${item.theme}`} to={`/work/${item.slug}`} key={item.slug}>
+            <Link className={`home-work-card theme-${item.theme}`} to={`/work/${item.slug}`} key={item.slug} data-reveal>
               <div className="home-work-image"><img src={item.cover} alt="" /></div>
               <div className="home-work-copy">
                 <span>{item.number} / {item.category}</span>
@@ -107,8 +107,8 @@ export default function CreativeHomePage() {
       </section>
 
       <section className="ai-teaser">
-        <div className="ai-orbit" aria-hidden="true"><span>AI</span><i>✦</i></div>
-        <div>
+        <div className="ai-orbit" aria-hidden="true" data-reveal><span>AI</span><i>✦</i></div>
+        <div data-reveal>
           <p className="eyebrow">A new question in my notebook</p>
           <h2>Events and marketing are adopting AI quickly.<br /><em>Responsible practice needs to keep pace.</em></h2>
           <p>
@@ -119,7 +119,7 @@ export default function CreativeHomePage() {
         </div>
       </section>
 
-      <section className="home-cta">
+      <section className="home-cta" data-reveal>
         <p>Have a brand question, a live brief, or a new tool to explore?</p>
         <h2>Let’s make it<br /><em>land beautifully.</em></h2>
         <Link to="/contact">Start a conversation ↗</Link>

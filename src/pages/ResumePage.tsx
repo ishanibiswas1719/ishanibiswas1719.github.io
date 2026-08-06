@@ -9,7 +9,7 @@ export default function ResumePage() {
         note="Experience, education and the practical skills I bring to events, brands, agencies and creative teams."
       />
 
-      <section className="education-ticket">
+      <section className="education-ticket" data-reveal>
         <div className="ticket-side"><span>EDU</span><strong>2023<br />—26</strong></div>
         <div className="ticket-main">
           <p>International Institute of Sports & Management</p>
@@ -19,7 +19,7 @@ export default function ResumePage() {
         <div className="ticket-score"><strong>7.91</strong><span>SGPA</span></div>
       </section>
 
-      <section className="resume-viewer">
+      <section className="resume-viewer" data-reveal>
         <div className="resume-actions">
           <div><p className="eyebrow">Original résumé</p><h2>Everything at a glance.</h2></div>
           <div>

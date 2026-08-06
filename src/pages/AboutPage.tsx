@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <div className="about-page paper-section">
       <section className="about-hero">
-        <div className="about-copy">
+        <div className="about-copy" data-reveal>
           <p className="eyebrow">01 / About me</p>
           <h1>About <em>me</em></h1>
           <div className="about-paragraphs">
@@ -27,7 +27,7 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-        <div className="about-photo collage-photo">
+        <div className="about-photo collage-photo" data-reveal>
           <span className="photo-star">✦</span>
           <img src={mainPortrait} alt="Ishani Biswas" />
           <div className="about-note">comfortable with<br /><b>people, pressure<br />& moving parts.</b></div>
@@ -35,12 +35,12 @@ export default function AboutPage() {
       </section>
 
       <section className="about-snapshots" aria-labelledby="about-snapshots-title">
-        <div className="snapshot-heading">
+        <div className="snapshot-heading" data-reveal>
           <p className="eyebrow">A few frames from the journey</p>
           <h2 id="about-snapshots-title">Click a photo.<br /><em>Come a little closer.</em></h2>
           <p>Personal curiosity, global venue learning and the on-ground environments that continue to shape how I think.</p>
         </div>
-        <div className="snapshot-collage">
+        <div className="snapshot-collage" data-reveal>
           {aboutSnapshots.map((snapshot, index) => (
             <button
               className={`snapshot-card snapshot-${index + 1}`}
@@ -62,15 +62,15 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="about-numbers">
+      <section className="about-numbers" data-reveal>
         <div><small>event & tournament environments</small><strong>10</strong><p>live events · tournaments · multi-venue delivery</p></div>
         <div><small>operations engagements</small><strong>7</strong><p>event delivery · branding · coordination</p></div>
         <div><small>graduation year</small><strong>’26</strong><p>Bachelor’s in Sports Management</p></div>
       </section>
 
       <section className="values-section">
-        <div className="values-title"><p className="eyebrow">The things I carry into every project</p><h2>Values &<br /><em>philosophy</em></h2></div>
-        <div className="values-grid">
+        <div className="values-title" data-reveal><p className="eyebrow">The things I carry into every project</p><h2>Values &<br /><em>philosophy</em></h2></div>
+        <div className="values-grid" data-reveal>
           <article><span>01</span><h3>Curiosity with follow-through</h3><p>Ask the extra question, learn the unfamiliar tool and stay with the task until the thinking becomes usable.</p></article>
           <article><span>02</span><h3>Details are the experience</h3><p>A straight mat, clean backdrop or accurate sponsor position can decide whether a space looks broadcast-ready.</p></article>
           <article><span>03</span><h3>Stay useful under pressure</h3><p>Listen, communicate early and move toward the solution when schedules or venue conditions change.</p></article>
@@ -79,11 +79,11 @@ export default function AboutPage() {
       </section>
 
       <section className="about-ai-belief">
-        <div className="belief-label"><span>Current curiosity</span><b>AI × LIVE IDEAS</b></div>
-        <blockquote>
+        <div className="belief-label" data-reveal><span>Current curiosity</span><b>AI × LIVE IDEAS</b></div>
+        <blockquote data-reveal>
           “Events, marketing and creative strategy reach huge audiences and are moving quickly on AI. I want to explore responsible practice when these systems shape operations, advertising, sponsorship, content and audience experiences.”
         </blockquote>
-        <div className="belief-context">
+        <div className="belief-context" data-reveal>
           <p>
             I don’t claim a formal AI-governance research background yet. What I bring is a sports-rooted, hands-on understanding of compliance, sponsor assets and operational decisions under live-event pressure—a practical perspective I want to extend into events, marketing, advertising and creative work.
           </p>
@@ -91,7 +91,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="about-next">
+      <section className="about-next" data-reveal>
         <p>Want the proof behind the story?</p>
         <Link to="/experience">Walk through my experience →</Link>
       </section>

@@ -1,5 +1,6 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import MotionEnhancements from "./MotionEnhancements";
 import { navigation } from "./portfolio";
 
 const pageTitles: Record<string, string> = {
@@ -53,6 +54,8 @@ export default function Layout({ children }: { children: ReactNode }) {
         </nav>
       </header>
 
+      <MotionEnhancements />
+
       <main id="main-content">{children}</main>
 
       <footer className="site-footer">
@@ -75,7 +78,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 
 export function PageIntro({ eyebrow, title, note }: { eyebrow: string; title: ReactNode; note: string }) {
   return (
-    <header className="page-intro">
+    <header className="page-intro" data-reveal>
       <p className="eyebrow">{eyebrow}</p>
       <h1>{title}</h1>
       <p className="page-intro-note">{note}</p>

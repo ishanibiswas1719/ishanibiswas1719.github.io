@@ -20,7 +20,7 @@ export default function WorkPage() {
 
       <section className="work-shelf">
         {workItems.map((item) => (
-          <article className={`work-feature theme-${item.theme}`} key={item.slug}>
+          <article className={`work-feature theme-${item.theme}`} key={item.slug} data-reveal>
             <div className="work-feature-image">
               <img src={item.cover} alt={`Cover of ${item.title}`} />
               <span>{item.pages}</span>
@@ -37,7 +37,7 @@ export default function WorkPage() {
       </section>
 
       <section className="field-archive" aria-labelledby="field-archive-title">
-        <header className="field-archive-heading">
+        <header className="field-archive-heading" data-reveal>
           <div>
             <p className="eyebrow">Field notes · selected documentation</p>
             <h2 id="field-archive-title">Where the work<br /><em>met the real world.</em></h2>
@@ -50,7 +50,7 @@ export default function WorkPage() {
         <div className="field-stories">
           {fieldStories.map((story) => (
             <article className="field-story" key={story.title}>
-              <div className="field-story-copy">
+              <div className="field-story-copy" data-reveal>
                 <p className="field-story-number">{story.number}</p>
                 <p className="eyebrow">{story.eyebrow}</p>
                 <h3>{story.title}</h3>
@@ -58,7 +58,7 @@ export default function WorkPage() {
                 <p>{story.summary}</p>
                 <aside><b>My lens</b><span>{story.contribution}</span></aside>
               </div>
-              <div className={`field-media-grid media-count-${story.media.length}`}>
+              <div className={`field-media-grid media-count-${story.media.length}`} data-reveal>
                 {story.media.map((media) => {
                   const mediaIndex = fieldMedia.findIndex((item) => item.src === media.src);
                   return (
